@@ -8,10 +8,10 @@ function App() {
       <p>Hello</p>
       <RedocStandalone
         specUrl="https://petstore.swagger.io/v2/swagger.json"
-        onLoaded={error => {
-          if (!error) {
-            console.log('Yay!');
-          }
+        //https://petstore.swagger.io/v2/swagger.json
+        options={{
+          nativeScrollbars: true,
+          theme: { colors: { primary: { main: '#dd5522' } } },
         }}
       />
     </div>
