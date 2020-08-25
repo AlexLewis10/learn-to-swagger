@@ -2,18 +2,15 @@ import React from 'react';
 import { RedocStandalone } from 'redoc';
 
 
+
 function App() {
+
+
+
   return (
     <div>
       <p>Hello</p>
-      <RedocStandalone
-        specUrl="https://petstore.swagger.io/v2/swagger.json"
-        //https://petstore.swagger.io/v2/swagger.json
-        options={{
-          nativeScrollbars: true,
-          theme: { colors: { primary: { main: '#dd5522' } } },
-        }}
-      />
+      <RedocStandalone specUrl='https://raw.githubusercontent.com/AlexLewis10/learn-to-swagger/master/swagger.json'/>
     </div>
   );
 }

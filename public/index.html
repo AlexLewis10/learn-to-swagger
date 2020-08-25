@@ -25,10 +25,12 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    <script src="node_modules/redoc/bundles/redoc.standalone.js"> </script>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <redoc spec-url='../openapi-yaml-client-generated/openapi.yaml'></redoc>
+    <script src="node_modules/redoc/bundles/redoc.standalone.js"> </script>
     <div id="root"></div>
     
     <!--
